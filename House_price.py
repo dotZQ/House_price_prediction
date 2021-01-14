@@ -4,7 +4,8 @@ from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LinearRegression
 import matplotlib.pyplot as plt
 
-df = pd.read_csv("/Users/zq314159/Documents/DATASETS/houseData.csv")
+#insert the houseData file here
+df = pd.read_csv("/houseData.csv")
 
 df.corr(method='pearson').style.format("{:.2}").background_gradient(cmap=plt.get_cmap('plasma'),axis=1)
 
